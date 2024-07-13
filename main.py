@@ -11,5 +11,6 @@ async def shya(_):
 async def start(message:types.Message):
     print(message)
     await message.answer(text=f'hello {message.from_user.first_name}\nyour id is {message.from_user.id}')
+
 if __name__=='__main__':
     executor.start_polling(dp,on_startup=shya)
