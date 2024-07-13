@@ -6,7 +6,7 @@ token=config['Telegram']['shya_3']
 bot=Bot(token)
 dp=Dispatcher(bot)
 async def shya(_):
-    print('main')
+    print('MAIN')
 @dp.message_handler(commands=('start'))
 async def start(message:types.Message):
     print(message)
